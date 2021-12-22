@@ -11,6 +11,15 @@ def syracuse_sequence(n):
     return p_list
 
 
+def syracuse_max(n):
+    p_list = syracuse_sequence(n)
+    max_n = 0
+    for i in p_list:
+        if i > max_n:
+            max_n = i
+    return max_n
+
+
 print('Write Number')
 number = int(input())
 print('Sequence - 1 or Max - 2')
