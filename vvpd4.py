@@ -24,3 +24,7 @@ print('Write Number')
 number = int(input())
 print('Sequence - 1 or Max - 2')
 com = int(input())
+if com == 1:
+    print(syracuse_sequence(number))
+else:
+    print(syracuse_max(number))
