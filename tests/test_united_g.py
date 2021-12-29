@@ -50,4 +50,17 @@ class TestNineSequence(unittest.TestCase):
     def test_sequence(self):
         self.assertEqual(syracuse_sequence(self.test_data),
                          [9, 28, 14, 7, 22, 11, 34, 17, 52, 26, 13, 40, 20, 10, 5, 16, 8, 4, 2, 1])
-        
+
+
+class ParametrizedTest(unittest.TestCase):
+    """
+    Parametrized test to 0, 5,
+    """
+
+    def setUp(self) -> None:
+        self.test_data = [(0, 0), (5, 16), (9, 52)]
+
+    def test_param_max(self):
+        for one_data in self.test_data:
+            with self.subTest(one_data=one_data):
+                self.assertEqual(syracuse_max(one_data[0]), one_data[1])
