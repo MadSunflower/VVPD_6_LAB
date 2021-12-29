@@ -26,3 +26,8 @@ def test_zero_number():
 
 def test_default_number():
     assert syracuse_sequence(13) == [13, 40, 20, 10, 5, 16, 8, 4, 2, 1]
+
+
+@pytest.mark.parametrize('t_input,t_expect', [(5, 16), (13, 40), (0, 0)])
+def test_default_max(t_input, t_expect):
+    assert syracuse_max(t_input) == t_expect
