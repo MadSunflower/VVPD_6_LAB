@@ -1,6 +1,8 @@
 def syracuse_sequence(n):
     p_list = list()
     p_list.append(n)
+    if n == 0:
+        return []
     while n != 1:
         if n % 2 == 0:
             n = n / 2
@@ -18,13 +20,3 @@ def syracuse_max(n):
         if i > max_n:
             max_n = i
     return max_n
-
-
-print('Write Number')
-number = int(input())
-print('Sequence - 1 or Max - 2')
-com = int(input())
-if com == 1:
-    print(syracuse_sequence(number))
-else:
-    print(syracuse_max(number))
