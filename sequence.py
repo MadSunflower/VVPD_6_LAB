@@ -1,4 +1,9 @@
 def syracuse_sequence(n):
+    """
+    Function to build Syracuse sequence
+    :param n: number for building sequence
+    :return: list of sequence
+    """
     p_list = list()
     p_list.append(n)
     if n == 0:
@@ -14,6 +19,11 @@ def syracuse_sequence(n):
 
 
 def syracuse_max(n):
+    """
+    Function to find maximal element in Syracuse sequence
+    :param n: number for building sequence
+    :return: maximal element in Syracuse sequence
+    """
     p_list = syracuse_sequence(n)
     max_n = 0
     for i in p_list:
