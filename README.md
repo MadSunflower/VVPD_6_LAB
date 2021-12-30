@@ -204,6 +204,6 @@ ____
 ____
 ## Результаты
 Ниже предоставлены результаты тестирования через pytest и unitest, а также пример вставки изображения:
-![pytest](https://ibb.co/D1zYybd "100%")
+![pytest](https://i.ibb.co/sC6y5Zb/2.jpg "100%")
 ![unittest](https://ibb.co/7QR2gqj "100%")
 
